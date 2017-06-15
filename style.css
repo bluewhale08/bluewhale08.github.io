@@ -1,0 +1,42 @@
+h1 {
+	font-size: 100px !important;
+	color: pink;
+	font-weight: 400 !important;
+}
+
+h2 {
+	font-size: 40px !important;
+}
+
+p {
+	text-align: left;
+	font-size: 30px;
+}
+body {
+	background-color: lightblue !important;
+}
+img {
+	margin-right: 20px;
+	margin-bottom: 20px;
+	margin-top: 10px;
+}
+.blue {
+	color: blue;
+	font-size: 500px;
+}
+.container-fluid {
+	background-color: lightgreen;
+}
+
+.container {
+	text-align: center;
+	width: 80% !important;
+	background-color: white;
+	border-radius: 10px;
+	border: 1px solid black;
+	padding-bottom: 10px;
+}
+
+.aboutPictures {
+	font-size: 100px !important;
+}

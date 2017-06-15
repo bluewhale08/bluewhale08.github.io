@@ -1,0 +1,62 @@
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+		<nav class="navbar navbar-default">
+		  <div class="container-fluid">
+		    <!-- Brand and toggle get grouped for better mobile display -->
+		    <div class="navbar-header">
+		      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+		        <span class="sr-only">Toggle navigation</span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		      </button>
+		    </div>
+
+		    <!-- Collect the nav links, forms, and other content for toggling -->
+		    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+		      <ul class="nav navbar-nav">
+		        <li><a href="index.html">Home</a></li>
+		        <li><a href="about.html">About</a></li>
+		         <li><a href="pictures.html">Pictures</a></li>
+		          <li><a href="aboutPictures.html">About Pictures</a></li>
+		          <li><a href="scratchGames.html">Scratch Games</a></li>
+		          <li><a href="coolOtherPeoplesScratchProjects.html">Cool Other Scratch Games</a></li>
+		      </ul>
+		    </div><!-- /.navbar-collapse -->
+		  </div><!-- /.container-fluid -->
+		</nav>
+	</head>
+	<body>
+		<div class="container" style="margin-bottom: 20px">
+			<h1> Image Gallery </h1>
+		</div>
+		<div class="container">
+			<div class="image-gallery">
+				<img src="https://cdn.pixabay.com/photo/2016/05/25/13/55/horses-1414889_960_720.jpg" height="400px">
+				<img src="https://s-media-cache-ak0.pinimg.com/736x/a7/61/d3/a761d340d87d888075314872a9b0c56e.jpg" height="400px">
+				<img src="https://www.villages-news.com/wp-content/uploads/2016/11/Horses.jpg" height="400px">
+				<img src="http://stabledays.typepad.com/.a/6a00e553bd675c8834011168f67c2c970c-pi" height="500px">
+				<img src="http://cdn.newsapi.com.au/image/v1/8f8eb6b7cfe47a58acfaa7ef322c5610" height="400px">
+			</div>
+		</div>
+		
+		<script>
+			window.onresize = changeImageSize;
+
+			function changeImageSize() {
+				var width = document.body.offsetWidth;
+				var images = document.getElementsByTagName('img');
+
+				for (var i = 0; i < images.length; i++) {
+					images[i].style.height = 1/6 * width
+
+				}
+			}
+		</script>
+
+	</body>
+</html>
